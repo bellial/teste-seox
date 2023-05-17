@@ -1,0 +1,139 @@
+@import 'utilities/colors';
+@import 'utilities/mixins';
+
+.btns-group{
+    @include devices(mobile) {
+    
+    }
+    @include devices(desktop) {
+        display: flex;
+        gap: 12px;
+        margin: -5px;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+}
+.btn-veja-mais-outline{
+    @include devices(mobile) {
+        display: none;
+    }
+    @include devices(desktop) {
+        display: flex;
+        box-sizing: border-box;
+        padding: 16px;
+        gap: 12px;
+        width: 120px;
+        height: 48px;
+        border: 2px solid $gray-700;
+        border-radius: 4px;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: $gray-700;
+    }
+
+    &:hover {
+        transition: all 1.3s ease;
+        color: $red-300;
+        background-color: $gray-900;
+        border-color: none;
+        .vector-82{
+            background: url('assets/images/Vector82red.png') no-repeat;
+            transition: all 1.3s ease;
+        }
+    }
+}
+.vector-82 {
+    background: url('assets/images/Vector82.png') no-repeat;
+    width: 5px;
+    height: 10px;
+    padding: 0 8px 13px 0;
+    margin-right: -3px;
+}
+.carousel-btn{
+    width: 48px;
+    height: 48px;
+    border: 1px solid $black;
+    border-radius: 4px;
+    background-color: $black;
+
+    &:hover{
+        background-color: transparent;
+        border: none;
+        transition: all 1.3s ease;
+    }
+}
+.btn-prev{
+    @include devices(mobile) {
+        display: none !important;
+    }
+
+}
+.btn-next{
+    @include devices(mobile) {
+        width: 48px;
+        height: 48px;
+        background-color: $gray-800;
+        transform: rotate(-90deg);
+        border: 1.5px solid $gray-500;
+
+        &:active{
+            transition: all .3s ease;
+            background-color: $gray-900;
+            border-color: none;
+
+            .vector-96{
+                background: url('assets/images/Vector82red.png') no-repeat; 
+                transform: rotate(90deg);
+            }
+        }
+    }
+}
+.vector-58{
+    background: url('assets/images/Vector58.png') no-repeat;
+    width: 6.67px;
+    height: 13.33px;
+    display: inline-block;
+    padding: 8px;
+    margin: 15px;
+}
+.vector-96{
+    background: url('assets/images/Vector96.png') no-repeat;
+    display: inline-block;
+    padding: 8px;
+    margin: 15px;
+}
+.btn-opacity{
+    opacity: 0.7;
+}
+.state-vector{
+    @include devices(mobile) {
+        background-image: url('assets/images/VectorThumbWhite.png');
+        height: 33px;
+        width: 33px;
+        left: 16px;
+        top: 15px;
+        border-radius: 0px;
+
+    }
+    @include devices(desktop) {
+        background-image: url('assets/images/Vector.png');
+        width: 60px;
+        height: 60px;
+        bottom: 150px;
+        left: 42.78px;
+    }
+}
+.state-vector-thumb{
+    background-image: url('assets/images/VectorThumbWhite.png');
+    width: 33px;
+    height: 33px;
+    top: 15px;
+    left: 16px;
+}
+[aria-disabled="true"] {
+    background-color: $gray-900;
+    border: none;
+    transition: all 1.3s ease;
+}
+
