@@ -18,18 +18,18 @@ get_header();
   <section class="carrossel d-flex flex-column">
     <section class="heading-dark-2 d-flex flex-row justify-content-between align-items-center">
       <h1 class="section">VÍDEOS</h1>
-      <section class="btns-group d-flex flex-row" role="group">
-      <a href="#" class="btn btn-veja-mais-outline flex-row justify-content-end align-items-center text-nowrap" role="button">
-          veja mais<i class="vector-82"></i>
-      </a>
-      <a href="#" class="carousel-btn btn-prev m-0 p-0" role="button" data-bs-toggle="carrossel">
-        <i class="vector-58" aria-hidden="true"></i>
-        <span class="visually-hidden">Previous</span>
-      </a>
-      <a href="#" class="carousel-btn btn-next m-0 p-0" role="button" data-bs-toggle="carrossel">
-          <i class="vector-96" aria-hidden="true"></i>
-          <span class="visually-hidden">Next</span>
-      </a>
+      <section class="btns-group d-flex" role="group">
+        <a href="#" class="btn btn-veja-mais-outline flex-row justify-content-end align-items-center text-nowrap" role="button">
+            veja mais<i class="vector-82"></i>
+        </a>
+        <a href="#" class="carousel-btn btn-prev m-0 p-0" role="button" data-bs-toggle="carrossel">
+          <i class="vector-58" aria-hidden="true"></i>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a href="#" class="carousel-btn btn-next m-0 p-0" role="button" data-bs-toggle="carrossel">
+            <i class="vector-96" aria-hidden="true"></i>
+            <span class="visually-hidden">Next</span>
+        </a>
       </section>
     </section><!--heading-dark-2-->
     <section class="d-flex gap-flex">
@@ -55,7 +55,7 @@ get_header();
                 $image= $post->_embedded->{'wp:featuredmedia'}[0]->media_details->sizes->{'full'}->source_url;
                 $excerpt= $post->excerpt->rendered;
                 $link = $post->link;
-                echo '<img src="' .$image. '">';
+                echo '<img class="img-fluid" src="' .$image. '">';
                 echo '<a class="state-vector position-absolute" href="' . esc_url( $link ) . '"></a>';
                 echo '<h1 class="hat loren-hat">' .$title. '</h1>';
                 echo '' . $excerpt . '';
@@ -69,7 +69,7 @@ get_header();
                 $image= $post->_embedded->{'wp:featuredmedia'}[0]->media_details->sizes->{'medium'}->source_url;
                 $excerpt= $post->excerpt->rendered;
                 $link = $post->link;
-                echo '<img class="slider-nav-img" src="' .$image. '">';
+                echo '<img class="slider-nav-img img-fluid" src="' .$image. '">';
                 echo '<a class="state-vector-thumb position-absolute" href="' . esc_url( $link ) . '"></a>';
                 echo '<span class="comment position-absolute"><i class="ico-comment d-inline-block"></i>29</span>';
                 echo '<section class="d-flex flex-column p-thumb">';

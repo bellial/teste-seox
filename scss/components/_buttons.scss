@@ -2,13 +2,10 @@
 @import 'utilities/mixins';
 
 .btns-group{
-    @include devices(mobile) {
-    
-    }
     @include devices(desktop) {
-        display: flex;
         gap: 12px;
         margin: -5px;
+        flex-direction: row;
         justify-content: flex-end;
         align-items: flex-start;
     }
