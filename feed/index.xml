@@ -9,8 +9,8 @@
 
 <channel>
 	<title>Teste Seox</title>
-	<atom:link href="https://seox-priss.io/feed/" rel="self" type="application/rss+xml" />
-	<link>https://seox-priss.io</link>
+	<atom:link href="https://bellial.github.io/teste-seox/feed/" rel="self" type="application/rss+xml" />
+	<link>https://bellial.github.io/teste-seox</link>
 	<description></description>
 	<lastBuildDate>Sat, 13 May 2023 00:47:37 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,20 +21,20 @@
 	<generator>https://wordpress.org/?v=6.2.1</generator>
 	<item>
 		<title>Hello world!</title>
-		<link>https://seox-priss.io/hello-world/</link>
-					<comments>https://seox-priss.io/hello-world/#comments</comments>
+		<link>https://bellial.github.io/teste-seox/hello-world/</link>
+					<comments>https://bellial.github.io/teste-seox/hello-world/#comments</comments>
 		
 		<dc:creator><![CDATA[belial]]></dc:creator>
 		<pubDate>Sat, 13 May 2023 00:47:37 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">https://seox-priss.io/?p=1</guid>
+		<guid isPermaLink="false">https://bellial.github.io/teste-seox/?p=1</guid>
 
 					<description><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing!]]></description>
 										<content:encoded><![CDATA[
 <p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>https://seox-priss.io/hello-world/feed/</wfw:commentRss>
+					<wfw:commentRss>https://bellial.github.io/teste-seox/hello-world/feed/</wfw:commentRss>
 			<slash:comments>1</slash:comments>
 		
 		
